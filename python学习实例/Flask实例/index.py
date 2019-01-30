@@ -3,15 +3,15 @@ from flask import Flask,abort,redirect,url_for,request,render_template
 app = Flask(__name__)
 
 @app.route('/',methods=['GET'])
-@app.route('/index',methods=['GET'])
+@app.route('/index/',methods=['GET'])
 def index():
 	return render_template('index.html')
 
-@app.route('/interest',methods=['GET'])
+@app.route('/interest/',methods=['GET'])
 def interest():
     return render_template('interest.html')
 
-@app.route('/animation',methods=['GET'])
+@app.route('/animation/',methods=['GET'])
 def animation():
     return render_template('animation.html')
 
