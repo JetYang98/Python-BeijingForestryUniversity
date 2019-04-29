@@ -36,16 +36,11 @@ class Memo():
     def __init__(self, func):
         self.func = func
         self.cache = {}
-        # return self.memo
 
     def __call__(self, *args):
-        # self.cache = {}
-        # @wraps(func)
-        # def wrap(*args):
         if args not in self.cache:
             self.cache[args] = self.func(*args)
         return self.cache[args]
-        # return wrap
 
 
 @Memo
