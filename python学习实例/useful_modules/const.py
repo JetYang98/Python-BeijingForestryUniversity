@@ -1,9 +1,9 @@
 class _const:
-    class ConstErroe(TypeError): pass
+    class ConstError(TypeError): pass
 
     def __setattr__(self, name, value):
         if name in self.__dict__:
-            raise self.ConstErroe("Can't rebind const %s" %name)
+            raise self.ConstError("Can't rebind const %s" %name)
         self.__dict__[name] = value
 
 import sys
