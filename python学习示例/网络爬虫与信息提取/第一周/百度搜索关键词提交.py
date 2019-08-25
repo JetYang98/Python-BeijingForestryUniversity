@@ -11,4 +11,4 @@ try:
     r.raise_for_status()
     print(len(r.text))
 except:
-    pirnt('爬取失败')
+    print('爬取失败')
