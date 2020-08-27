@@ -12,7 +12,7 @@ h2{
 	font-size: 34px;
 }
 body{
-	background-image: url(images/1.jpg);
+	background-image: url(/static/images/1.jpg);
 	background-size:cover; 
 	background-attachment: fixed;
 }
